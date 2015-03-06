@@ -9,6 +9,7 @@ such as
 as well as
 + Distance
 + Distance SKi-Km
++ Distance SKiLift-Km
 + Time
 + speed
 + stops
