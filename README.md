@@ -5,6 +5,11 @@ such as
 + Slopes
 + No. Black, Red, Blue etc.
 + Highest point
++ Lowest point
 as well as
 + Distance
++ Distance SKi-Km
 + Time
++ speed
++ stops
++ free/guiding
