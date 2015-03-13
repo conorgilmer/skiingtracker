@@ -80,9 +80,13 @@ if ($result) {
 	while ($product = mysql_fetch_assoc($result))
 	{ 
               $statusString="<p><strong>Place </strong>".$product["ski_place"]."</p>";
-       
-            
+      
+      $ski_image = $product["ski_photo"];   
+      if (empty($ski_image)) {
+          $ski_image= "nophoto.png";
+      }
       $htmlString .= "<div class=\"thumbnail\"/>";      
+      $htmlString .= "<img class=\"media=object\" align=right width=250 height=250 src = \"images/".$ski_image."\" />";
 /*    $htmlString .=   "<div class=\"thumbnail\"> <a class=\"pull-right\" href=\"#\">
     <img class=\"media-object\" width=150 height=150 src=\"data:image/jpeg;base64,". 
            base64_encode( $product['file_content'] ) . "\" /></a>";
