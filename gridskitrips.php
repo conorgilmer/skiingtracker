@@ -14,7 +14,7 @@ define ( "MY_APP", 1 );
 define ( "APPLICATION_PATH", "application" );
 define ( "TEMPLATE_PATH", APPLICATION_PATH . "/view" );
 
-//include_once(APPLICATION_PATH . "/inc/session.inc.php");
+include_once(APPLICATION_PATH . "/inc/session.inc.php");
 
 
 /*
@@ -27,7 +27,7 @@ include (APPLICATION_PATH . "/inc/functions.inc.php");
 //Set up variable so 'active' class set on navbar link
 $activeHome = "active";
 
-include (TEMPLATE_PATH . "/public/header.html");
+include (TEMPLATE_PATH . "/header.html");
 
 ?>
 <div class="container">
@@ -94,7 +94,8 @@ if ($result) {
         $htmlString.="<p><strong>Description </strong>".$product["ski_desc"]."</p>";
    
         $htmlString.="<p><a href=\"skitripdetailsopen.php?property_id=".$product['ski_id']."\" class=\"btn btn-primary\" role=\"button\">Details</a> ";
-        $htmlString.="</div>
+         $htmlString .= "<a href=\"#\" class=\"btn btn-default\" role=\"button\">Costs</a></p>";
+      $htmlString.="</div>
     </div>
   </div>";
       
