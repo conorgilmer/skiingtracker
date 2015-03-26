@@ -5,14 +5,14 @@
 #
 BEGIN {	FS = ","
 	print "\nSkidays Activity Report"
-	print "\nNo.\tVertical Meters\tLifts\tLift KM\tSlope Distance\n";
+	print "\nDays.\tVertical\tLifts\tLift KM\tSlope Distance\n";
 min1 =10000
 min2 =10000
 min3 =10000
 min4 =10000
 }
 {	
-	printf "%s\t%.2f\t%.2f\t%.2f\t%.2f\n" , NR, $1, $2, $3, $4;
+	printf "%s\t%.0f\t\t%.0f\t%.0f\t%.0f\n" , NR, $1, $2, $3, $4;
 	sum1+=$1; 
 	sum2+=$2; 
 	sum3+=$3;
@@ -30,8 +30,8 @@ min4 =10000
 	max4=(max4>$4)?max4:$4
 } 
 END { 
-	printf "\nAvg:\t%.2f\t%.2f\t%.2f\t%.2f\n\n", sum1/n, sum2/n, sum3/n, sum4/n 
-
-#	printf "\tMinimun: \t %.2f\t %.2f\t %.2f\t %.2f\t %.2f\t%.2f\n", min2, min3,min4,min5,min6,mint;
-#	printf "\tMaximun: \t %.2f\t %.2f\t %.2f\t %.2f\t %.2f\t%.2f\n", max2, max3,max4,max5,max6,maxt;
+	printf "\nTotals:\t%.0f\t\t%.0f\t%.0f\t%.0f\n", sum1, sum2, sum3, sum4 
+	printf "\nAvg:\t%.0f\t\t%.0f\t%.0f\t%.0f\n", sum1/n, sum2/n, sum3/n, sum4/n 
+	printf "Min:\t%.0f\t\t%.0f\t%.0f\t%.0f\n", min1, min2, min3,min4;
+	printf "Max:\t%.0f\t\t%.0f\t%.0f\t%.0f\n\n", max1, max2, max3,max4;
 }
