@@ -34,8 +34,9 @@ min5 =10000
 	max5=(max5>$5)?max5:$5
 } 
 END { 
-	printf "\nTotals:\t%.0f\t\t%.0f\t%.0f\t%.0f\t\t%.0f\n", sum1, sum2, sum3, sum4, sum5
-	printf "\nAvg:\t%.0f\t\t%.0f\t%.0f\t%.0f\t\t%.0f\n", sum1/n, sum2/n, sum3/n, sum4/n , sum5/n
-	printf "Min:\t%.0f\t\t%.0f\t%.0f\t%.0f\t\t%.0f\n", min1, min2, min3, min4, min5;
-	printf "Max:\t%.0f\t\t%.0f\t%.0f\t%.0f\t\t%.0f\n\n", max1, max2, max3, max4, max5;
+	printf "\nTotals:\t%.0f\t\t%.0f\t%.0f\t%.0f\t\t%.0f\n", sum1, sum2, sum3, sum4, sum5;
+	printf "\nAvg:\t%.0f\t\t%.0f\t%.1f\t%.0f\t\t%.0f", sum1/n, sum2/n, sum3/n, sum4/n , sum5/n;
+	printf "\nMin:\t%.0f\t\t%.0f\t%.0f\t%.0f\t\t%.0f", min1, min2, min3, min4, min5;
+	printf "\nMax:\t%.0f\t\t%.0f\t%.0f\t%.0f\t\t%.0f", max1, max2, max3, max4, max5;
+	printf "\n\n";
 }
