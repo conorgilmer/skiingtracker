@@ -1,18 +1,18 @@
 
 Skidays Activity Report
 
-Days.	Vertical	Lifts	Lift KM	Slope Distance
+Days.	Vertical	Lifts	Lift KM	Distance	Minutes
 
-1	3077		11	10	14
-2	2789		10	9	16
-3	3515		12	11	16
-4	4942		17	21	28
-5	2744		10	9	12
-6	2901		12	9	12
+1	3077		11	10	14		310
+2	2789		10	9	16		356
+3	3515		12	11	16		361
+4	4942		17	21	28		332
+5	2744		10	9	12		344
+6	2901		12	9	12		349
 
-Totals:	19968		72	69	98
+Totals:	19968		72	69	98		2052
 
-Avg:	3328		12	12	16
-Min:	2744		10	9	12
-Max:	4942		17	21	28
+Avg:	3328		12	12	16		342
+Min:	2744		10	9	12		310
+Max:	4942		17	21	28		361
 
