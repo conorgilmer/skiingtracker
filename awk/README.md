@@ -5,6 +5,10 @@ Read in days details from a csv file, calculate, the totals, average and minimum
 + Lifts
 + Lift Distance
 + Slope Distance
++ Minutes
+
+##Usage
+> awk -f skidays.awk data.csv > report.dat
 
 ##To Do
-Add Minutes, High point, Low point
+Add High point, Low point
