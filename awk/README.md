@@ -5,3 +5,6 @@ Read in days details from a csv file, calculate, the totals, average and minimum
 + Lifts
 + Lift Distance
 + Slope Distance
+
+##To Do
+Add Minutes, High point, Low point
