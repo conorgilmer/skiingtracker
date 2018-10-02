@@ -15,6 +15,10 @@ as well as
 + stops
 + free/guiding
 
+#Graphs
+Google Charts 
+
+#Database Tables
 The Database will have four tables
 + skiholiday
   + resort
